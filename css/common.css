@@ -12,6 +12,10 @@ li {
   padding: 0;
   margin: 0;
 }
+img {
+  max-width: 100%;
+  display: block;
+}
 body {
   margin: 16px;
 
@@ -55,4 +59,26 @@ h2 {
 }
 .item > ul :last-child {
   margin-bottom: 0;
+}
+
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 1440px;
+  row-gap: 48px;
+  column-gap: 24px;
+  padding: 100px 10.8%;
+  background-color: #fff;
+  margin-left: auto;
+  margin-right: auto;
+  justify-content: center;
+}
+.gallery-item {
+  max-width: calc((100% - 2 * 24px) / 3);
+  min-width: 225px;
+}
+.gallery-item img {
+  aspect-ratio: 360/300;
+  object-fit: cover;
+  object-position: center;
 }
