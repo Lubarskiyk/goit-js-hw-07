@@ -16,6 +16,31 @@ img {
   max-width: 100%;
   display: block;
 }
+input,
+button {
+  font-family: inherit;
+  font-size: inherit;
+}
+
+input,
+button {
+  line-height: inherit;
+  color: inherit;
+  background-color: transparent;
+  background: none;
+  box-shadow: none;
+}
+
+button {
+  cursor: pointer;
+}
+input:focus,
+input:active,
+button:focus,
+button:active {
+  outline: none;
+}
+
 body {
   margin: 16px;
 
@@ -81,4 +106,63 @@ h2 {
   aspect-ratio: 360/300;
   object-fit: cover;
   object-position: center;
+}
+
+.wraper {
+  max-width: 408px;
+  padding: 24px;
+  background-color: #fff;
+  border-radius: 8px;
+}
+
+input {
+  display: block;
+  border: 1px solid #808080;
+  border-radius: 4px;
+  width: 100%;
+  padding: 8px 16px;
+  margin-bottom: 16px;
+  transition: border-color 250ms ease-in-out;
+}
+input:focus,
+input:active {
+  border-color: #000;
+}
+
+input::placeholder {
+  font-weight: 400;
+  font-size: 16px;
+  letter-spacing: 0.04em;
+  color: #2e2f42;
+}
+.wraper h1 {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 1.33333;
+  color: #2e2f42;
+}
+
+.login-form {
+  background-color: #fff;
+  border-radius: 8px;
+  max-width: 408px;
+  padding: 24px;
+}
+label {
+  display: block;
+}
+
+button {
+  margin-right: auto;
+  padding: 8px 16px;
+  border-radius: 8px;
+  border: none;
+  background-color: #4e75ff;
+  color: #fff;
+  font-weight: 500;
+  transition: background-color 250ms ease-in-out;
+}
+
+button:hover {
+  background-color: #6c8cff;
 }
