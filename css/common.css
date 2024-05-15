@@ -42,8 +42,8 @@ button:active {
 }
 
 body {
-  margin: 16px;
-
+  margin: 0;
+  padding: 16px;
   font-family: 'Montserrat', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -153,7 +153,6 @@ label {
 }
 
 button {
-  margin-right: auto;
   padding: 8px 16px;
   border-radius: 8px;
   border: none;
@@ -165,4 +164,30 @@ button {
 
 button:hover {
   background-color: #6c8cff;
+}
+body {
+  height: 100vh;
+}
+.widget {
+  max-width: 345px;
+  padding: 50px 50px;
+  background-color: #fff;
+  border-radius: 8px;
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.color {
+  display: inline-block;
+}
+.widget p {
+  text-align: center;
+  margin-bottom: 16px;
+}
+
+.change-color {
+  display: block;
+  margin: 0 auto;
 }
