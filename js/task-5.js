@@ -13,10 +13,11 @@ const changeColor = {
   colorChange(randomColor) {
     this.body.style.backgroundColor = randomColor;
     this.spanColor.textContent = randomColor;
-    const boxParaRule = [...this.styleSheet.cssRules].find(
-      r => r.selectorText === '.color'
+
+    const textColorRule = [...this.styleSheet.cssRules].find(
+      selector => selector.selectorText === '.color'
     );
-    boxParaRule.style.setProperty('color', randomColor);
+    textColorRule.style.setProperty('color', randomColor);
   },
 };
 
